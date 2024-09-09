@@ -2,7 +2,7 @@
 
 namespace Phico\Bus;
 
-interface HandlerInterface
+interface Handler
 {
     /**
      * Handles the Command

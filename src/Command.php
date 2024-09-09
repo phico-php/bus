@@ -2,7 +2,7 @@
 
 namespace Phico\Bus;
 
-interface CommandInterface
+interface Command
 {
     /**
      * Returns the unique command id
