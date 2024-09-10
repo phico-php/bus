@@ -2,11 +2,14 @@
 
 namespace Phico\Bus;
 
-interface Command
+abstract class Command
 {
     /**
      * Returns the unique command id
      * @return string
      */
-    public function id(): string;
+    public function id(): string
+    {
+        return $this->id;
+    }
 }
