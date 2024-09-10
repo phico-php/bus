@@ -16,7 +16,7 @@ Pass a command to the bus
 
 ```php
 $cmd = new Command(...);
-bus()->send($cmd);
+bus()->handle($cmd);
 ```
 
 ### Command results
