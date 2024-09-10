@@ -19,7 +19,7 @@ class Bus
      */
     protected function handler(Command $cmd): Handler
     {
-        return container()->get($this->inflect($class));
+        return container()->get($this->inflect($cmd));
     }
     /**
      * Returns the class name of the Handler for the Command
