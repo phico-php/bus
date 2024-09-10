@@ -24,9 +24,20 @@
       "pestphp/pest-plugin": true
     }
   },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:phico-php/phico.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:phico-php/router.git"
+    }
+  ],
   "require": {
     "php": "^8.0",
-    "phico/container": "dev-main"
+    "phico/container": "dev-main",
+    "phico/phico": "dev-main"
   },
   "require-dev": {
     "phpstan/phpstan": "^1.11",

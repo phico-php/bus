@@ -4,8 +4,102 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "354d5af1b9901973fde5d28c5a2e32a5",
+    "content-hash": "f2e442017ef58cd04b0ff914f8fa1d05",
     "packages": [
+        {
+            "name": "phico/cli",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phico-php/cli.git",
+                "reference": "82c3c42492f099c1e332045125f3ccf979e11865"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phico-php/cli/zipball/82c3c42492f099c1e332045125f3ccf979e11865",
+                "reference": "82c3c42492f099c1e332045125f3ccf979e11865",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "pestphp/pest": "^2.34",
+                "phpstan/phpstan": "^1.11"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Phico\\Cli\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "indgy",
+                    "email": "me@indgy.uk"
+                }
+            ],
+            "description": "Lightweight terminal support for Phico",
+            "support": {
+                "issues": "https://github.com/phico-php/cli/issues",
+                "source": "https://github.com/phico-php/cli/tree/main"
+            },
+            "time": "2024-09-04T10:40:21+00:00"
+        },
+        {
+            "name": "phico/config",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phico-php/config.git",
+                "reference": "e6b81476eef892cf8fc002ea514c277323baa69d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phico-php/config/zipball/e6b81476eef892cf8fc002ea514c277323baa69d",
+                "reference": "e6b81476eef892cf8fc002ea514c277323baa69d",
+                "shasum": ""
+            },
+            "require": {
+                "phico/filesystem": "dev-main",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "pestphp/pest": "^2.34",
+                "phpstan/phpstan": "*"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "Phico\\Config\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "indgy",
+                    "email": "me@indgy.uk"
+                }
+            ],
+            "description": "Lightweight config file reader for Phico",
+            "support": {
+                "issues": "https://github.com/phico-php/config/issues",
+                "source": "https://github.com/phico-php/config/tree/main"
+            },
+            "time": "2024-07-17T10:01:28+00:00"
+        },
         {
             "name": "phico/container",
             "version": "dev-main",
@@ -54,6 +148,264 @@
                 "source": "https://github.com/phico-php/container/tree/main"
             },
             "time": "2024-09-02T09:05:48+00:00"
+        },
+        {
+            "name": "phico/filesystem",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phico-php/filesystem.git",
+                "reference": "11c6bd338b951090c64ec46a395ebe96b7e22c15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phico-php/filesystem/zipball/11c6bd338b951090c64ec46a395ebe96b7e22c15",
+                "reference": "11c6bd338b951090c64ec46a395ebe96b7e22c15",
+                "shasum": ""
+            },
+            "require": {
+                "phico/support": "dev-main",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "pestphp/pest": "^2.34",
+                "php": "^8.0",
+                "phpstan/phpstan": "*"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "Phico\\Filesystem\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "indgy",
+                    "email": "me@indgy.uk"
+                }
+            ],
+            "description": "Lightweight local filesystem support for Phico",
+            "support": {
+                "issues": "https://github.com/phico-php/filesystem/issues",
+                "source": "https://github.com/phico-php/filesystem/tree/main"
+            },
+            "time": "2024-09-04T10:39:19+00:00"
+        },
+        {
+            "name": "phico/logger",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phico-php/logger.git",
+                "reference": "22a5c009c61d0a7d8527dcfe6728433eba09b2e5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phico-php/logger/zipball/22a5c009c61d0a7d8527dcfe6728433eba09b2e5",
+                "reference": "22a5c009c61d0a7d8527dcfe6728433eba09b2e5",
+                "shasum": ""
+            },
+            "require": {
+                "phico/filesystem": "dev-main",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "pestphp/pest": "^2.34",
+                "phpstan/phpstan": "*"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "Phico\\Logger\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "indgy",
+                    "email": "me@indgy.uk"
+                }
+            ],
+            "description": "Lightweight logging support for Phico",
+            "support": {
+                "issues": "https://github.com/phico-php/logger/issues",
+                "source": "https://github.com/phico-php/logger/tree/main"
+            },
+            "time": "2024-08-31T14:51:09+00:00"
+        },
+        {
+            "name": "phico/phico",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:phico-php/phico.git",
+                "reference": "6787dcd2fe135b62a52d955dfb4cf8275cac9dd0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phico-php/phico/zipball/6787dcd2fe135b62a52d955dfb4cf8275cac9dd0",
+                "reference": "6787dcd2fe135b62a52d955dfb4cf8275cac9dd0",
+                "shasum": ""
+            },
+            "require": {
+                "phico/cli": "dev-main",
+                "phico/config": "dev-main",
+                "phico/container": "dev-main",
+                "phico/filesystem": "dev-main",
+                "phico/logger": "dev-main",
+                "phico/router": "dev-main",
+                "phico/support": "dev-main",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "pestphp/pest": "^2.34",
+                "phpstan/phpstan": "*"
+            },
+            "default-branch": true,
+            "bin": [
+                "bin/phico"
+            ],
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "Phico\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "indgy",
+                    "email": "me@indgy.uk"
+                }
+            ],
+            "description": "An insanely fast, dependency-free framework you will fall in love with",
+            "support": {
+                "source": "https://github.com/phico-php/phico/tree/main",
+                "issues": "https://github.com/phico-php/phico/issues"
+            },
+            "time": "2024-09-05T10:27:37+00:00"
+        },
+        {
+            "name": "phico/router",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:phico-php/router.git",
+                "reference": "0b3f31b4d688024f2c2fc317822b04fe87ce7659"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phico-php/router/zipball/0b3f31b4d688024f2c2fc317822b04fe87ce7659",
+                "reference": "0b3f31b4d688024f2c2fc317822b04fe87ce7659",
+                "shasum": ""
+            },
+            "require": {
+                "phico/container": "dev-main",
+                "phico/phico": "*",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "pestphp/pest": "^2.34",
+                "phpstan/phpstan": "*"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Phico\\Router\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "scripts": {
+                "analyse": [
+                    "vendor/bin/phpstan analyse src/"
+                ]
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "indgy",
+                    "email": "me@indgy.uk"
+                }
+            ],
+            "description": "Capable routing support for Phico",
+            "support": {
+                "source": "https://github.com/phico-php/router/tree/main",
+                "issues": "https://github.com/phico-php/router/issues"
+            },
+            "time": "2024-09-04T14:00:05+00:00"
+        },
+        {
+            "name": "phico/support",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phico-php/support.git",
+                "reference": "cac14579fedec4714057830831b1027a56ddb1cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phico-php/support/zipball/cac14579fedec4714057830831b1027a56ddb1cf",
+                "reference": "cac14579fedec4714057830831b1027a56ddb1cf",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "pestphp/pest": "^2.34",
+                "phpstan/phpstan": "^1.11"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "Phico\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "indgy",
+                    "email": "me@indgy.uk"
+                }
+            ],
+            "description": "Support classes and functions for Phico",
+            "support": {
+                "issues": "https://github.com/phico-php/support/issues",
+                "source": "https://github.com/phico-php/support/tree/main"
+            },
+            "time": "2024-09-04T10:38:40+00:00"
         }
     ],
     "packages-dev": [
@@ -1298,12 +1650,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "0fcbf194ab63d8159bb70d9aa3e1350051632009"
+                "reference": "a50b75aee98a260b39c71b9a568c932d7fd1aa21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/0fcbf194ab63d8159bb70d9aa3e1350051632009",
-                "reference": "0fcbf194ab63d8159bb70d9aa3e1350051632009",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/a50b75aee98a260b39c71b9a568c932d7fd1aa21",
+                "reference": "a50b75aee98a260b39c71b9a568c932d7fd1aa21",
                 "shasum": ""
             },
             "require": {
@@ -1348,7 +1700,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-09-09T08:10:35+00:00"
+            "time": "2024-09-09T20:53:56+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -3751,7 +4103,10 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "phico/container": 20,
+        "phico/phico": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
