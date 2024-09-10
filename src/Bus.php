@@ -17,7 +17,7 @@ class Bus
      * Returns the Handler instance
      * @return Handler
      */
-    private function handler(Command $cmd): Handler
+    protected function handler(Command $cmd): Handler
     {
         return container()->get($this->inflect($class));
     }
@@ -27,7 +27,7 @@ class Bus
      * @param Command $command
      * @return string
      */
-    private function inflect(Command $cmd): string
+    protected function inflect(Command $cmd): string
     {
         return str_replace("Command", "Handler", get_class($cmd));
     }
