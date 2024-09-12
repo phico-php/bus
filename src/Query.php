@@ -7,6 +7,7 @@ namespace Phico\Bus;
 use Phico\Capsule;
 
 
-abstract class Command extends Capsule
+abstract class Query extends Capsule
 {
+
 }
