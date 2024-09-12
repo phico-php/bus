@@ -38,8 +38,9 @@ class CommandWithResult
 ```
 
 ```php
+$bus = new \Phico\Bus\Bus;
 $cmd = new CommandWithResult(...);
-bus()->send($cmd);
+$bus->handle($cmd);
 $result = $cmd->result();
 ```
 
